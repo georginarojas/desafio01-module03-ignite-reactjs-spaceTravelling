@@ -1,1 +1,51 @@
-// TODO
+.Post {
+  max-width: 720px;
+  margin: auto 0;
+
+  a {
+    display: block;
+
+    & + a {
+      margin-top: 2rem;
+      padding-top: 2rem;
+    }
+
+    strong {
+      font-size: 1.75rem;
+      font-weight: 700;
+      line-height: 2rem;
+    }
+
+    p {
+      font-size: 1.15rem;
+      color: var(--gray-100);
+      line-height: 1.5rem;
+      margin-top: 0.8rem;
+    }
+
+    .Informations {
+      display: flex;
+      margin-top: 1.25rem;
+      color: var(--gray-200);
+
+      div {
+        display: inline-block;
+        margin-right: 5rem;
+
+        & + div {
+          margin-left: 2rem;
+        }
+
+        svg {
+          margin-right: 0.5rem;
+        }
+
+        time,
+        span {
+          font-size: 0.9rem;
+          position: absolute;
+        }
+      }
+    }
+  }
+}
