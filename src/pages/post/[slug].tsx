@@ -1,5 +1,6 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
 import Head from 'next/head';
+import { RichText } from 'prismic-dom';
 
 import { getPrismicClient } from '../../services/prismic';
 
@@ -28,7 +29,18 @@ interface PostProps {
 }
 
 export default function Post({ post }: PostProps): JSX.Element {
-  console.log('Post ', post);
+  
+  // Reading time - start
+  const numberWords = post.data.content.reduce((acc, content) => {
+    const headingWords = content.heading.split(' ').length;
+    const bodyWords = RichText.asText(content.body).split(' ').length;
+    acc += headingWords + bodyWords;
+    return acc;
+  }, 0);
+
+  const readingTime = Math.ceil(numberWords/200);
+  // Reading time - End
+
   return (
     <>
       <Head>
