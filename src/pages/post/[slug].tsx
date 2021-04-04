@@ -1,6 +1,7 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
 import Head from 'next/head';
 import { RichText } from 'prismic-dom';
+import Header from '../../components/Header';
 
 import { getPrismicClient } from '../../services/prismic';
 
@@ -46,6 +47,7 @@ export default function Post({ post }: PostProps): JSX.Element {
       <Head>
         <title>Post | SpaceTravelling</title>
       </Head>
+      <Header />
     </>
   );
 }
