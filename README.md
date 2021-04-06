@@ -7,7 +7,7 @@
   <a href="#-tests-specifications">Tests Specifications</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
 
-![Demo SpaceTravelling](https://j.gifs.com/q7wQvk.gif)
+![Demo SpaceTravelling](https://j.gifs.com/YWoymM.gif)
 
 ## Description
 In the first phase of the challenge, a blog was created, obtaining posts from the Prismic CMS. On the home page, 
