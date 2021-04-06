@@ -46,7 +46,8 @@
       margin-bottom: 2rem;
       font-style: italic;
 
-      time, p {
+      time,
+      p {
         position: relative;
       }
 
@@ -92,4 +93,44 @@
 .Comments {
   max-width: 720px;
   margin: auto 0;
+}
+
+.NavigationPost {
+  max-width: 720px;
+  margin: auto 0;
+  position: relative;
+  margin: 4rem 0 7rem 0;
+  padding: 3rem 0 0 0;
+  border-top: 1px solid var(--gray-100);
+
+  .PreviewPost,
+  .NextPost {
+    display: flex !important;
+    flex-direction: column;
+    max-width: 50%;
+    position: absolute;
+
+    span {
+      font-size: 1.3rem;
+    }
+    a {
+      margin-top: 0.5rem;
+      font-weight: 600;
+      color: var(--pink);
+      font-size: 1.15rem;
+    }
+    a:hover {
+      cursor: pointer;
+    }
+  }
+
+  .NextPost {
+    text-align: right;
+    right: 0;
+  }
+
+  .PreviewPost {
+    text-align: left;
+    left: 0;
+  }
 }
