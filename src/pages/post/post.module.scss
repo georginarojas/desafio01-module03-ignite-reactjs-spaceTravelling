@@ -1,1 +1,73 @@
-// TODO
+.Banner{
+    max-width: 100%;
+    margin: auto 0;
+    margin-bottom: 5rem;
+
+    img {
+       max-width: 100%; 
+       margin: auto 0;
+    }
+}
+
+.Post{
+    max-width: 720px;
+    margin: auto 0;
+
+    h1 {
+        font-size: 3.4rem;
+        font-weight: 700;
+        line-height: 2rem;
+    }
+
+    .Informations {
+        display: flex;
+        margin-top: 2.5rem;
+        color: var(--gray-200);
+
+        div {
+            display: inline-block;
+            // position: relative;
+            margin-right: 8rem;
+
+            svg{
+                margin-right: 0.5rem;
+            }
+
+            time, span {
+                font-size: 1rem;
+                position:absolute;
+            }
+        }
+    }
+
+    .PostContent {
+        margin-top: 4rem;
+        line-height: 2rem;
+        font-size: 1.125rem;
+        color: var(--gray-100);
+        text-align: justify;
+
+        h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--gray-25);
+            margin: 3.5rem 0;
+        }
+
+        div {
+            
+            p, ul, ol {
+                margin: 1.5rem 0;
+            }
+
+            ul, ol {
+                padding-left: 1.5rem;
+
+                li{
+                    margin: 0.5rem 0 0.5rem 1rem;
+                }
+            }
+        }
+
+    }
+}
