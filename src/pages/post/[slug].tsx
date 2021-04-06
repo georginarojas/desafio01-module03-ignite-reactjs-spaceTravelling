@@ -1,8 +1,10 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
 import Head from 'next/head';
 import { RichText } from 'prismic-dom';
-import Header from '../../components/Header';
 import { useRouter } from 'next/router';
+
+import Header from '../../components/Header';
+import Comments from '../../components/Comments';
 
 import { getPrismicClient } from '../../services/prismic';
 import Prismic from '@prismicio/client';
@@ -97,6 +99,9 @@ export default function Post({ post }: PostProps): JSX.Element {
             </div>
           ))}
         </article>
+        <div className={styles.Comments}>
+          <Comments />
+        </div>
       </main>
     </>
   );
