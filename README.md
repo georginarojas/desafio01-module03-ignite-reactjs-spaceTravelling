@@ -12,6 +12,8 @@
 ## Description
 In the first phase of the challenge, a blog was created, obtaining posts from the Prismic CMS. On the home page, 
 the user can upload some or all of the posts from Prismic, the user can also access a specific post and read all the information about that post.
+For the second stage of the challenge, were implemented some functionalities like a comments board using Utteranc, navigation properties between the posts, 
+and preview from the Prismic.
 
 ## Technologies
 - Yarn
@@ -29,7 +31,9 @@ the user can upload some or all of the posts from Prismic, the user can also acc
 ## Functionalities
 - Upload some or all brief posts from the Prismic CMS on the Home page.
 - Upload the post from the Prismic CMS on the Post page.
-
+- Comments board using Utteranc.
+- Navigation between the posts.
+- Using Preview from Prismic CMS.
 
 ## Tests specification
 - The Header component should be able to render logo.
