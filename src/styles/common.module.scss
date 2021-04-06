@@ -3,3 +3,25 @@
     margin: 0 auto;
     padding: 0 10rem;
 }
+
+.Preview {
+    aside {
+      max-width: 720px;
+      background: var(--gray-25);
+      height: 3.6rem;
+  
+      margin: 5rem 0;
+      border-radius: 4px;
+  
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      a {
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: var(--background);
+      }
+    }
+  }
+  

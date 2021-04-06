@@ -101,7 +101,7 @@ export default function Home({
           </button>
         )}
       </main>
-      <div className={`${commonStyles.Container} ${styles.Preview}`}>
+      <div className={`${commonStyles.Container} ${commonStyles.Preview}`}>
         {preview && (
           <aside>
             <Link href="/api/exit-preview">
